@@ -1,0 +1,31 @@
+<div class="user-details">
+    <div class="user-info">
+        <div class="user-image">
+            <img class="image" [src]="user.photo">
+        </div>
+    
+        <div class="user-basic-info">
+            <mat-form-field>
+                <mat-label>Age</mat-label>
+                <input matInput [(ngModel)]="user.age" name="age" readonly type="number">
+            </mat-form-field>
+            
+            <mat-form-field>
+                <mat-label>Gender</mat-label>
+                <input matInput [(ngModel)]="user.gender" name="gender" readonly>
+            </mat-form-field>
+            
+            <mat-form-field>
+                <mat-label>Phone</mat-label>
+                <input matInput [(ngModel)]="user.phone" name="phone" readonly>
+            </mat-form-field>        
+        </div>
+    </div>
+    
+    <div class="user-address">
+        <mat-form-field style="width: 100%;">
+            <mat-label>Address</mat-label>
+            <input matInput [value]="address" name="address" readonly>
+        </mat-form-field>
+    </div>
+</div>

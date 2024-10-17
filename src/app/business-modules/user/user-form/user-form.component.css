@@ -1,0 +1,12 @@
+.first-level-info, .second-level-info, .third-level-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-level-info, .second-level-info {
+    margin: 0 5px 0 5px;
+}
+
+.third-level-info {
+    margin: 0 10px 0 10px;
+}

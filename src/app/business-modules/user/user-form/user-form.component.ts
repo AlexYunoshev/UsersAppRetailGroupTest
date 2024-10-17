@@ -39,16 +39,4 @@ export class UserFormComponent implements OnInit {
       });
     }
   }
-
-  // saveUser(): void {
-  //   if (this.user.id) {
-  //     this.userService.updateUser(this.user).subscribe(() => {
-  //       this.router.navigate(['/users']);
-  //     });
-  //   } else {
-  //     this.userService.addUser(this.user).subscribe(() => {
-  //       this.router.navigate(['/users']);
-  //     });
-  //   }
-  // }
 }

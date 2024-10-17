@@ -1,13 +1,12 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe",
-      "email": "john.doe@example.com",
-      "username": "johndoe",
-      "password": "hashed_password_1",
-      "age": 28,
+      "id": "1",
+      "firstName": "Tom",
+      "lastName": "Cruise",
+      "email": "tom.cruise@example.com",
+      "username": "tcruise",
+      "age": 62,
       "gender": "Male",
       "phone": "+1234567890",
       "address": {
@@ -16,17 +15,16 @@
         "state": "CA",
         "zip": "12345"
       },
-      "photo": "https://example.com/photos/johndoe.jpg"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg"
     },
     {
-      "id": 2,
-      "firstName": "Jane",
-      "lastName": "Smith",
-      "email": "jane.smith@example.com",
-      "username": "janesmith",
-      "password": "hashed_password_2",
-      "age": 32,
-      "gender": "Female",
+      "id": "2",
+      "firstName": "Tom",
+      "lastName": "Hardy",
+      "email": "t.hardy@example.com",
+      "username": "tomH",
+      "age": 47,
+      "gender": "Male",
       "phone": "+0987654321",
       "address": {
         "street": "456 Elm St",
@@ -34,16 +32,15 @@
         "state": "NY",
         "zip": "54321"
       },
-      "photo": "https://example.com/photos/janesmith.jpg"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/4/43/Tom_Hardy_by_Gage_Skidmore.jpg"
     },
     {
-      "id": 3,
-      "firstName": "Alice",
-      "lastName": "Johnson",
-      "email": "alice.johnson@example.com",
-      "username": "alicejohnson",
-      "password": "hashed_password_3",
-      "age": 24,
+      "id": "3",
+      "firstName": "Emma",
+      "lastName": "Stone",
+      "email": "emma@example.com",
+      "username": "Estone",
+      "age": 35,
       "gender": "Female",
       "phone": "+1122334455",
       "address": {
@@ -52,16 +49,15 @@
         "state": "TX",
         "zip": "67890"
       },
-      "photo": "https://example.com/photos/alicejohnson.jpg"
+      "photo": "https://m.media-amazon.com/images/M/MV5BMjI4NjM1NDkyN15BMl5BanBnXkFtZTgwODgyNTY1MjE@._V1_.jpg"
     },
     {
-      "id": 4,
-      "firstName": "Bob",
-      "lastName": "Williams",
-      "email": "bob.williams@example.com",
-      "username": "bobwilliams",
-      "password": "hashed_password_4",
-      "age": 40,
+      "id": "4",
+      "firstName": "Liam",
+      "lastName": "Neeson",
+      "email": "LNeeson@example.com",
+      "username": "liamNeeson",
+      "age": 72,
       "gender": "Male",
       "phone": "+2233445566",
       "address": {
@@ -70,25 +66,7 @@
         "state": "FL",
         "zip": "98765"
       },
-      "photo": "https://example.com/photos/bobwilliams.jpg"
-    },
-    {
-      "id": 5,
-      "firstName": "Charlie",
-      "lastName": "Brown",
-      "email": "charlie.brown@example.com",
-      "username": "charliebrown",
-      "password": "hashed_password_5",
-      "age": 29,
-      "gender": "Male",
-      "phone": "+3344556677",
-      "address": {
-        "street": "654 Pine St",
-        "city": "Yourtown",
-        "state": "WA",
-        "zip": "12345"
-      },
-      "photo": "https://example.com/photos/charliebrown.jpg"
+      "photo": "https://thumbs.dreamstime.com/b/liam-neeson-25254660.jpg"
     }
   ]
 }
