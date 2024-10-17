@@ -6,7 +6,7 @@ import { UserFormComponent } from './business-modules/user/user-form/user-form.c
 const routes: Routes = [
   { path: '', redirectTo: '/users', pathMatch: 'full' },
   { path: 'users', component: UserListComponent },
-  { path: 'add-user', component: UserFormComponent },
+  { path: 'add', component: UserFormComponent },
   { path: 'edit-user/:id', component: UserFormComponent }
 ];
 

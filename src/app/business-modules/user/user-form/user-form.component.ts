@@ -9,7 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./user-form.component.css']
 })
 export class UserFormComponent implements OnInit {
-  user: User = { id: 0, name: '', email: '' };
+  user: User = {id: 0, firstName: '', lastName: '', email: '', username: '', age: 0, gender: '', phone: '', address: { street: '', city: '', state: '', zip: '' }, photo: '' };
+  isEdit = false;
 
   constructor(
     private userService: UserService,
@@ -18,23 +19,36 @@ export class UserFormComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const userId = this.route.snapshot.paramMap.get('id');
-    if (userId) {
-      this.userService.getUser(+userId).subscribe(user => {
-        this.user = user;
+    const id = this.route.snapshot.paramMap.get('id');
+    if (id) {
+      this.isEdit = true;
+      this.userService.getUser(+id).subscribe(data => {
+        this.user = data;
       });
     }
   }
 
-  saveUser(): void {
-    if (this.user.id) {
+  onSubmit() {
+    if (this.isEdit) {
       this.userService.updateUser(this.user).subscribe(() => {
-        this.router.navigate(['/users']);
+        this.router.navigate(['/']);
       });
     } else {
       this.userService.addUser(this.user).subscribe(() => {
-        this.router.navigate(['/users']);
+        this.router.navigate(['/']);
       });
     }
   }
+
+  // saveUser(): void {
+  //   if (this.user.id) {
+  //     this.userService.updateUser(this.user).subscribe(() => {
+  //       this.router.navigate(['/users']);
+  //     });
+  //   } else {
+  //     this.userService.addUser(this.user).subscribe(() => {
+  //       this.router.navigate(['/users']);
+  //     });
+  //   }
+  // }
 }
