@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "username": "johndoe",
+        "password": "hashed_password_1",
+        "age": 28,
+        "gender": "Male",
+        "phone": "+1234567890",
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        },
+        "photo": "https://example.com/photos/johndoe.jpg"
+    },
+    {
+        "id": 2,
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "username": "janesmith",
+        "password": "hashed_password_2",
+        "age": 32,
+        "gender": "Female",
+        "phone": "+0987654321",
+        "address": {
+            "street": "456 Elm St",
+            "city": "Othertown",
+            "state": "NY",
+            "zip": "54321"
+        },
+        "photo": "https://example.com/photos/janesmith.jpg"
+    },
+    {
+        "id": 3,
+        "firstName": "Alice",
+        "lastName": "Johnson",
+        "email": "alice.johnson@example.com",
+        "username": "alicejohnson",
+        "password": "hashed_password_3",
+        "age": 24,
+        "gender": "Female",
+        "phone": "+1122334455",
+        "address": {
+            "street": "789 Maple Ave",
+            "city": "Sometown",
+            "state": "TX",
+            "zip": "67890"
+        },
+        "photo": "https://example.com/photos/alicejohnson.jpg"
+    },
+    {
+        "id": 4,
+        "firstName": "Bob",
+        "lastName": "Williams",
+        "email": "bob.williams@example.com",
+        "username": "bobwilliams",
+        "password": "hashed_password_4",
+        "age": 40,
+        "gender": "Male",
+        "phone": "+2233445566",
+        "address": {
+            "street": "321 Oak St",
+            "city": "Newtown",
+            "state": "FL",
+            "zip": "98765"
+        },
+        "photo": "https://example.com/photos/bobwilliams.jpg"
+    },
+    {
+        "id": 5,
+        "firstName": "Charlie",
+        "lastName": "Brown",
+        "email": "charlie.brown@example.com",
+        "username": "charliebrown",
+        "password": "hashed_password_5",
+        "age": 29,
+        "gender": "Male",
+        "phone": "+3344556677",
+        "address": {
+            "street": "654 Pine St",
+            "city": "Yourtown",
+            "state": "WA",
+            "zip": "12345"
+        },
+        "photo": "https://example.com/photos/charliebrown.jpg"
+    }
+]
