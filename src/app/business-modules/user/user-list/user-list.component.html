@@ -1,0 +1,9 @@
+<h2>User List</h2>
+<button routerLink="/add-user">Add User</button>
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }} ({{ user.email }})
+    <button (click)="editUser(user.id)">Edit</button>
+    <button (click)="deleteUser(user.id)">Delete</button>
+  </li>
+</ul>
