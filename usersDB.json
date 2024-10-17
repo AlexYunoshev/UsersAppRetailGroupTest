@@ -56,14 +56,14 @@
       "firstName": "Liam",
       "lastName": "Neeson",
       "email": "LNeeson@example.com",
-      "username": "liamNeeson",
+      "username": "Lne",
       "age": 72,
       "gender": "Male",
       "phone": "+2233445566",
       "address": {
         "street": "321 Oak St",
         "city": "Newtown",
-        "state": "FL",
+        "state": "CA",
         "zip": "98765"
       },
       "photo": "https://thumbs.dreamstime.com/b/liam-neeson-25254660.jpg"

@@ -20,16 +20,13 @@ export class UserListComponent implements OnInit {
     this.loadUsers();
   }
 
-  loadUsers(): void {
-    this.userService.getUsers().subscribe(users => {
-      this.users = users;
-    });
+  async loadUsers(): Promise<void> {
+    this.users = await lastValueFrom(this.userService.getUsers());
   }
 
-  deleteUser(id: number): void {
-    this.userService.deleteUser(id).subscribe(() => {
-      this.loadUsers(); // Refresh the user list
-    });
+  async deleteUser(id: number): Promise<void> {
+    await lastValueFrom(this.userService.deleteUser(id));
+    this.loadUsers(); 
   }
 
   editUser(id: number): void {

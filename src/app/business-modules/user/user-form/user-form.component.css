@@ -7,6 +7,10 @@
     margin: 0 5px 0 5px;
 }
 
-.third-level-info {
-    margin: 0 10px 0 10px;
+.third-level-info, .submit-button {
+    margin: 0 15px 0 15px;
+}
+
+form {
+    width: 1440px;
 }

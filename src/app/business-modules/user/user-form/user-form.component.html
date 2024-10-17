@@ -12,7 +12,7 @@
   
     <mat-form-field style="width: 250px;">
       <mat-label>Email</mat-label>
-      <input matInput [(ngModel)]="user.email" name="email" required email>
+      <input type="email" matInput [(ngModel)]="user.email" name="email" required email>
     </mat-form-field>
   
     <mat-form-field>
@@ -22,7 +22,7 @@
   
     <mat-form-field style="width: 174px;">
       <mat-label>Age</mat-label>
-      <input matInput [(ngModel)]="user.age" name="age" required type="number">
+      <input type="number" min="1" max="100" matInput [(ngModel)]="user.age" name="age" required type="number">
     </mat-form-field>
   
     <mat-form-field>
@@ -38,7 +38,7 @@
   <div class="second-level-info">
     <mat-form-field style="width: 260px;">
       <mat-label>Phone</mat-label>
-      <input matInput [(ngModel)]="user.phone" name="phone" required>
+      <input type="number" matInput [(ngModel)]="user.phone" name="phone" required>
     </mat-form-field>
   
     <mat-form-field style="width: 260px;">
@@ -58,15 +58,15 @@
   
     <mat-form-field style="width: 260px;">
       <mat-label>Zip Code</mat-label>
-      <input matInput [(ngModel)]="user.address.zip" name="zip" required>
+      <input matInput type="number" [(ngModel)]="user.address.zip" name="zip" required>
     </mat-form-field>
   </div>
   
   <div class="third-level-info">
     <mat-form-field style="width: 100%;">
       <mat-label>Photo URL</mat-label>
-      <input matInput [(ngModel)]="user.photo" name="photo" required>
+      <input matInput [(ngModel)]="user.photo" name="photo">
     </mat-form-field>
   </div>
 
-  <button mat-raised-button type="submit">{{ isEdit ? 'Update' : 'Add' }}
+  <button class="submit-button" mat-raised-button type="submit">{{ isEdit ? 'Update' : 'Add' }}
